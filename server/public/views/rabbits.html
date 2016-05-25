@@ -1,0 +1,6 @@
+<div class="container" ng-controller="RabbitsController">
+    <button ng-click="getRandomPet()">Find a Rabbit!</button>
+    <h2>{{animal.name.$t}}</h2>
+    <p>{{animal.description.$t}}</p>
+    <img ng-src="{{animal.media.photos.photo[0].$t}}"></img>
+</div>
