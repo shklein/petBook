@@ -1,0 +1,8 @@
+<div class="col-md-6 container">
+        <input type="text" ng-model="zip" placeholder="Enter a zip code" />
+        <button ng-click="getShelters()">Get Shelters</button>
+        <h2 ng-if="shelters != undefined">Shelters in {{zip}}</h2>
+        <ul>
+          <li ng-repeat="shelters in zip">{{shelters[0].address1}}</li>
+        </ul>
+      </div>
